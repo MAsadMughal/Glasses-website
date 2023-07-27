@@ -3,16 +3,18 @@ import logo from '../../../assets/logonav.avif'
 import { BsPerson, BsHeart } from 'react-icons/bs'
 import { FaEye, FaGlobe, FaBagShopping } from 'react-icons/fa6'
 import clsx from 'clsx';
-const Navbar = () => {
 
+
+const Navbar = () => {
   const [eye, setEye] = useState(false)
   return (
-    <div className="px-2 py-3">
-      <div className="flex flex-row items-center justify-evenly">
+    <div className="mx-2">
+      {/* <div className="flex py-3 flex-row space-x-3 items-center justify-evenly fixed w-[97%] bg-white"> */}
+      <div className="flex py-3 flex-row space-x-3 items-center justify-evenly bg-white">
         <div className='w-[150px]'>
           <img width={'150px'} src={logo} />
         </div>
-        <div className='flex max-w-[70%] text-md overflow-x-auto mx-3 whitespace-nowrap flex-row space-x-5'>
+        <div className='flex max-w-[70%] text-sm md:text-md overflow-x-auto mx-3 whitespace-nowrap flex-row space-x-5'>
           <p className='cursor-pointer'>Eyeglasses</p>
           <p className='cursor-pointer'>Sunglasses</p>
           <p className='cursor-pointer'>New In</p>
@@ -31,10 +33,10 @@ const Navbar = () => {
             </svg>
           </div>
         </form>
-        <BsPerson className='cursor-pointer text-lg' />
-        <BsHeart className='cursor-pointer text-lg' />
-        <FaBagShopping className='cursor-pointer text-lg' />
-        <FaGlobe className='cursor-pointer text-lg' />
+        <BsPerson className='cursor-pointer text-2xl' />
+        <BsHeart className='cursor-pointer text-2xl' />
+        <FaBagShopping className='cursor-pointer text-2xl' />
+        <FaGlobe className='cursor-pointer text-2xl' />
         <FaEye onClick={() => setEye(!eye)} className={clsx(`cursor-pointer text-lg`, eye && `text-blue-500`)} />
       </div>
     </div >)
