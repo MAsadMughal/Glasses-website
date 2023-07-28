@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../../assets/logonav.avif'
+import logo from '../../../assets/logo.jpg'
 import { BsPerson, BsHeart } from 'react-icons/bs'
 import { FaEye, FaGlobe, FaBagShopping } from 'react-icons/fa6'
 import clsx from 'clsx';
