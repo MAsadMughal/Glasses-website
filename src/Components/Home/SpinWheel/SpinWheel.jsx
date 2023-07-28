@@ -31,7 +31,7 @@ const SpinWheel = () => {
         }
     };
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const customStyles = {
         content: {
             top: '50%',
