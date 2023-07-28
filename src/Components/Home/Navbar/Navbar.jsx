@@ -1,15 +1,35 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../../assets/logonav.avif'
 import { BsPerson, BsHeart } from 'react-icons/bs'
 import { FaEye, FaGlobe, FaBagShopping } from 'react-icons/fa6'
 import clsx from 'clsx';
-
-
+import topblackhead from '../../../assets/topblackhead.webp'
+import { AiOutlineQuestionCircle } from 'react-icons/ai'
 const Navbar = () => {
   const [eye, setEye] = useState(false)
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsNavbarVisible(window.scrollY === 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="mx-2">
-      {/* <div className="flex py-3 flex-row space-x-3 items-center justify-evenly fixed w-[97%] bg-white"> */}
+    <div className="fixed top-0 w-full z-50">
+      {isNavbarVisible && <img className='bg-black' src={topblackhead} />}
+      <div className='flex flex-row bg-gray-100 py-[5px] justify-evenly align-middle'>
+        <span className='flex flex-row flex-nowrap'><p className='text-sm'>Free standard shipping on USD $69.00+ </p><AiOutlineQuestionCircle className='mt-[2px] opacity-70 mx-[5px]' /></span>
+        <span className='flex flex-row flex-nowrap'><p className='text-sm'>Buy 1, get other frames 50 % off</p><AiOutlineQuestionCircle className='mt-[2px] opacity-70 mx-[5px]' /></span>
+        <p>Help Center</p>
+        <p>Track Order</p>
+      </div>
       <div className="flex py-3 flex-row space-x-3 items-center justify-evenly bg-white">
         <div className='w-[150px]'>
           <img width={'150px'} src={logo} />

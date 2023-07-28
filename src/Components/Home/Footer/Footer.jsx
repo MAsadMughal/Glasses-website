@@ -1,6 +1,11 @@
 import React from 'react'
 import { BsFacebook, BsInstagram, BsPinterest, BsSearch, BsTiktok, BsTwitter, BsYoutube } from 'react-icons/bs'
+import { AiOutlineMessage } from 'react-icons/ai'
+import { BsEnvelope, BsPhone } from 'react-icons/bs'
+import { GiSmartphone } from 'react-icons/gi'
 
+
+import './Footer.css'
 const Footer = () => {
     return (
         <div className='flex flex-col mt-[5vh]'>
@@ -19,6 +24,69 @@ const Footer = () => {
                 <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsTwitter /></div>
                 <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsPinterest /></div>
                 <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsTiktok /></div>
+            </div>
+            <div className="footer bg-gray-100 text-black">
+                <div className="c3">
+                    <h2 className='text-lg font-semibold'>DISCOVER</h2>
+                    <ul id="ul">
+                        <li className='my-[10px]'>Ultra Light</li>
+                        <li className='my-[10px]'>Spring Hinges</li>
+                        <li className='my-[10px]'>Premium Collection</li>
+                        <li className='my-[10px]'>Goggles</li>
+                        <li className='my-[10px]'>Adjustable-nose-pads</li>
+                        {/* <li className='my-[10px]'></li> */}
+                    </ul>
+                </div>
+                <div className="c3">
+                    <h2 className='text-lg font-semibold'>COMPANY</h2>
+                    <ul id="ul">
+                        <li className='my-[10px]'>Zeelool Blog</li>
+                        <li className='my-[10px]'>About Zeelool</li>
+                        <li className='my-[10px]'>Goggles</li>
+                        <li className='my-[10px]'>About Zeelool</li>
+                        <li className='my-[10px]'>Zeelool Blog</li>
+                        <li className='my-[10px]'>Contact Zeelool</li>
+                        <li className='my-[10px]'>Zeelool Blog</li>
+                        <li className='my-[10px]'>Contact Zeelool</li>
+                        <li className='my-[10px]'>Spring Hinges</li>
+                        <li className='my-[10px]'>Premium Collection</li>
+
+                        {/* <li className='my-[10px]'></li> */}
+                    </ul>
+                </div>
+                <div className="c3">
+                    <h2 className='text-lg font-semibold'>POLICIES</h2>
+                    <ul id="ul">
+                        <li className='my-[10px]'>Return</li>
+                        <li className='my-[10px]'>Promise And Refund</li>
+                        <li className='my-[10px]'>Return</li>
+                        <li className='my-[10px]'>Promise And Refund</li>
+                        <li className='my-[10px]'>Terms & conditions</li>
+                        <li className='my-[10px]'>Return</li>
+                        {/* <li className='my-[10px]'></li> */}
+                    </ul>
+                </div>
+
+                <div className="c4">
+                    <h2 className='text-lg font-semibold'>HELP & INFO</h2>
+                    <ul id="ul">
+                        <li className='my-[10px]'>Facebook</li>
+                        <li className='my-[10px]'>Instagram</li>
+                        <li className='my-[10px]'>Twitter</li>
+                        <li className='my-[10px]'>Youtube </li>
+                    </ul>
+                </div>
+
+                <div className="c4">
+                    <h2 className="text-2xl font-bold">Need Help?</h2>
+                    <ul id="ul">
+                        <li className='my-[10px] flex flex-row'><p className='p-2 border-black border-[1px] rounded-full mr-3'><AiOutlineMessage className='border-black text-black rounded-full' /></p><button className='rounded-full bg-blue-600 text-white p-[10px]'>Contact Us</button></li>
+                        <li className='my-[10px] flex flex-row'><p className='p-2 border-black border-[1px] rounded-full mr-3'><BsEnvelope className='border-black text-black rounded-full' /></p>Customer service</li>
+                        <li className='my-[10px] flex flex-row'><p className='p-2 border-black border-[1px] rounded-full mr-3'><BsEnvelope className='border-black text-black rounded-full' /></p>Customer service</li>
+                        <li className='my-[10px] flex flex-row'><p className='p-2 border-black border-[1px] rounded-full mr-3'><BsPhone className='border-black text-black rounded-full' /></p>Customer service</li>
+                        <li className='w-full'><button className='bg-blue-600 text-white py-[5px] px-[30px]' >Track Order</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

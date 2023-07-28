@@ -41,12 +41,12 @@ const SpinWheel = () => {
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
             padding: '0px',
-            zIndex: '100',
             transition: 'all 0.3s ease-in-out',
             // overflow: 'visible',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
             maxHeight: '90vh',
-            maxWidth: '400px'
+            maxWidth: '400px',
+            zIndex:'1000',
         },
 
     };
@@ -62,7 +62,6 @@ const SpinWheel = () => {
             {/* <div className='rounded-[10px] p-5'> */}
             {/* <div className="flex flex-col justify-center w-full h-full"> */}
             <div className='p-3'>
-
                 <div className="flex flex-row justify-end text-2xl cursor-pointer" onClick={() => setOpen(false)}>
                     <AiOutlineClose />
                 </div>
