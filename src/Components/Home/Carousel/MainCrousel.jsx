@@ -24,8 +24,9 @@ export const responsive = {
 
 const MainCrousel = ({ arr, }) => {
     return (
-        <div className='mx-[5%] my-[5vh]' style={{zIndex:'0'}}>
-        <MultiCarousel infinite={true} arrows={false} partialVisible={false} responsive={responsive} autoPlay={true} autoPlaySpeed={1000}>
+        <div className='mx-[5%] my-[5vh]' style={{ zIndex: '0' }}>
+            <p className='text-2xl text-center my-[20px] font-bold'>Designer's Collection</p>
+            <MultiCarousel infinite={true} arrows={false} partialVisible={false} responsive={responsive} autoPlay={true} autoPlaySpeed={1000}>
                 {[carouselimg1, carouselimg2].map((item) => {
                     return (<div><img src={item} alt="" /></div>
                     )

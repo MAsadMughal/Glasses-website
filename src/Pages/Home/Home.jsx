@@ -14,6 +14,10 @@ import BuyatZeelool from '../../Components/Home/BuyAtZeelool/BuyatZeelool'
 import NewArrivals from '../../Components/Home/NewArrivals/NewArrivals'
 import FlashSale from '../../Components/Home/FlashSale/FlashSale'
 import PremiumCollection from '../../Components/Home/PremiumCollection/PremiumCollection'
+import Top from '../../Components/Home/Top/Top'
+import ARtryOn from '../../Components/Home/TryOn/ARtryOn'
+import Inspireme from '../../Components/Home/Inspireme/Inspireme'
+import FashionTrend from '../../Components/Home/FashionTrend/FashionTrend'
 function Home() {
     return (
         <>
@@ -21,11 +25,16 @@ function Home() {
             <TopBanners />
             <SpinWheel />
             <BestSellers />
+            <Top/>
+            <FlashSale name={""}/>
             <NewArrivals/>
             <MainCrousel />
+            <ARtryOn/>
+            <Inspireme/>
             <TwoBanners banner1={banner2} banner2={banner3} />
             <PremiumCollection/>
-            <FlashSale/>
+            <FashionTrend/>
+            <FlashSale name={"Flash Sale"}/>
             <TwoBanners banner1={banner1} banner2={banner1} />
             <Memorywall />
             <BuyatZeelool/>

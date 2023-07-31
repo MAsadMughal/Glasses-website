@@ -2,8 +2,7 @@ import React from 'react'
 import { BsFacebook, BsInstagram, BsPinterest, BsSearch, BsTiktok, BsTwitter, BsYoutube } from 'react-icons/bs'
 import { AiOutlineMessage } from 'react-icons/ai'
 import { BsEnvelope, BsPhone } from 'react-icons/bs'
-import { GiSmartphone } from 'react-icons/gi'
-
+import footerImg from '../../../assets/footerimg.avif'
 
 import './Footer.css'
 const Footer = () => {
@@ -87,6 +86,10 @@ const Footer = () => {
                         <li className='w-full'><button className='bg-blue-600 text-white py-[5px] px-[30px]' >Track Order</button></li>
                     </ul>
                 </div>
+            </div>
+            <div className='flex flex-row flex-nowrap justify-between mx-[5%] p-5'>
+                <img width={'50%'} src={footerImg} alt="" />
+                <p>© 2023 Zeelool Inc. All rights reserved</p>
             </div>
         </div>
     )

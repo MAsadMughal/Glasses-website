@@ -27,10 +27,10 @@ export const responsive = {
     }
 };
 
-const FlashSale = () => {
+const FlashSale = ({name}) => {
     return (
         <div className='flex flex-col justify-center text-center my-[5%]'>
-            <p className='text-2xl font-bold'>Flash Sale</p>
+            <p className='text-2xl font-bold'>{name}</p>
             <MultiCarousel className='mx-[5%] ' infinite={true} arrows={false} partialVisible={false} responsive={responsive} autoPlay={false} >
                 {[glassescar1, glassescar2, glassescar3, glassescar4].map((item) => {
                     return (<div className='bg-white p-[10px] flex flex-col justify-center align-middle'>
