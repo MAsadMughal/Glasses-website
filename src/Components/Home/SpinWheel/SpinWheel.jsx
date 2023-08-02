@@ -18,18 +18,18 @@ const SpinWheel = () => {
     const [spinning, setSpinning] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
 
-    const startSpinning = () => {
-        if (!spinning) {
-            const randomIndex = Math.floor(Math.random() * cartItems.length);
-            setSelectedItem(cartItems[randomIndex]);
-            setSpinning(true);
+    // const startSpinning = () => {
+    //     if (!spinning) {
+    //         const randomIndex = Math.floor(Math.random() * cartItems.length);
+    //         setSelectedItem(cartItems[randomIndex]);
+    //         setSpinning(true);
 
-            // Simulate the spinning htmlFor 5 seconds
-            setTimeout(() => {
-                setSpinning(false);
-            }, 5000);
-        }
-    };
+    //         // Simulate the spinning htmlFor 5 seconds
+    //         setTimeout(() => {
+    //             setSpinning(false);
+    //         }, 5000);
+    //     }
+    // };
 
     const [open, setOpen] = useState(false);
     const customStyles = {
