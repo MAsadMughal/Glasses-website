@@ -36,7 +36,7 @@ const FashionTrend = () => {
             <div className='flex flex-row flex-nowrap mx-[5%]'>
                 <div className='flex flex-col justify-center align-middle w-[10%] min-h-[80vh]'>
                     {data.map((item, ind) => {
-                        return (<div onClick={() => setCurr(ind)} className={clsx(`cursor-pointer font-bold text-center flex align-middle justify-center flex-col h-[25%]`, ind === curr ? 'bg-white text-neutral-900' : 'bg-blue-600 text-white')}>{item.title}</div>)
+                        return (<div onClick={() => setCurr(ind)} className={clsx(`cursor-pointer font-bold text-center flex align-middle justify-center flex-col h-[25%]`, ind === curr ? 'bg-white text-neutral-900' : 'gradient_h1 text-white')}>{item.title}</div>)
 
                     })}
                 </div>

@@ -32,3 +32,13 @@ li {
 button {
   color: black;
 }
+.gradient_h1 {
+  background: linear-gradient(
+    to top right,
+    #b38a8e 0%,
+    #f9c9c5 40%,
+    #fff 21%,
+    #f9c9c5 22%,
+    #b38a8e 100%
+  );
+}
