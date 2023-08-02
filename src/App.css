@@ -12,3 +12,23 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: black;
 }
+
+p,
+li {
+  background: linear-gradient(
+    to top right,
+    #b38a8e 0%,
+    #f9c9c5 20%,
+    #fff 21%,
+    #f9c9c5 22%,
+    #b38a8e 100%
+  );
+  font-weight: 600;
+  /* Define the gradient colors and direction */
+  background-clip: text; /* Clip the text with the gradient background */
+  -webkit-background-clip: text; /* For Safari compatibility */
+  color: transparent; /* Hide the actual text */
+}
+button {
+  color: black;
+}

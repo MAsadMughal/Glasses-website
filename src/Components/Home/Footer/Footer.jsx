@@ -16,13 +16,22 @@ const Footer = () => {
                         <button type="submit" className="text-white absolute right-[1px] bottom-[0px] focus:outline-none font-medium text-sm px-4 py-3 bg-blue-500 "><BsSearch /></button>
                     </div>
                 </form>
+                <svg width="0" height="0">
+                    <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                        <stop stopColor="#b38a8e" offset="0%" />
+                        <stop stopColor="#f9c9c5" offset="20%" />
+                        <stop stopColor="#fff" offset="49%" />
+                        <stop stopColor="#f9c9c5" offset="50%" />
+                        <stop stopColor="#b38a8e" offset="100%" />
+                    </linearGradient>
+                </svg>
                 <p className='text-xl ml-[50px]'>FOLLOW US</p>
-                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsFacebook /></div>
-                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsYoutube /></div>
-                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsInstagram /></div>
-                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsTwitter /></div>
-                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsPinterest /></div>
-                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsTiktok /></div>
+                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsFacebook style={{ fill: "url(#blue-gradient)" }} /></div>
+                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsYoutube style={{ fill: "url(#blue-gradient)" }} /></div>
+                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsInstagram style={{ fill: "url(#blue-gradient)" }} /></div>
+                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsTwitter style={{ fill: "url(#blue-gradient)" }} /></div>
+                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsPinterest style={{ fill: "url(#blue-gradient)" }} /></div>
+                <div className='p-2 transition-all duration-100  cursor-pointer text-xl hover:rounded-full'><BsTiktok style={{ fill: "url(#blue-gradient)" }} /></div>
             </div>
             <div className="footer bg-gray-100 text-black">
                 <div className="c3">

@@ -53,11 +53,21 @@ const Navbar = () => {
             </svg>
           </div>
         </form>
-        <BsPerson className='cursor-pointer text-2xl' />
-        <BsHeart className='cursor-pointer text-2xl' />
-        <FaBagShopping className='cursor-pointer text-2xl' />
-        <FaGlobe className='cursor-pointer text-2xl' />
-        <FaEye onClick={() => setEye(!eye)} className={clsx(`cursor-pointer text-lg`, eye && `text-blue-500`)} />
+        <svg width="0" height="0">
+          <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop stopColor="#b38a8e" offset="0%" />
+            <stop stopColor="#f9c9c5" offset="20%" />
+            <stop stopColor="#fff" offset="49%" />
+            <stop stopColor="#f9c9c5" offset="50%" />
+            <stop stopColor="#b38a8e" offset="100%" />
+          </linearGradient>
+        </svg>
+
+        <BsPerson style={{ fill: "url(#blue-gradient)" }} className=' cursor-pointer text-2xl ' />
+        <BsHeart style={{ fill: "url(#blue-gradient)" }} className=' cursor-pointer text-2xl ' />
+        <FaBagShopping style={{ fill: "url(#blue-gradient)" }} className=' cursor-pointer text-2xl ' />
+        <FaGlobe style={{ fill: "url(#blue-gradient)" }} className=' cursor-pointer text-2xl ' />
+        <FaEye onClick={() => setEye(!eye)} style={{ fill: "url(#blue-gradient)" }} className={clsx(`cursor-pointer text-lg`, eye && `text-blue-500`)} />
       </div>
     </div >)
 }

@@ -6,7 +6,7 @@ import bestbar from '../../../assets/bestsellersbar.avif'
 
 const BestSellers = () => {
     return (
-        <div className='flex flex-col items-center mt-[10vh]'>
+        <div className='text-red-300 flex flex-col items-center mt-[10vh]'>
             <p className='text-3xl font-bold font-sans'>Buy glasses at ZEELOOL</p>
             <p className='text-md mt-3 font-sans text-sm w-[90%] md:w-[50%] text-center opacity-70'>Rich in style and well-crafted, zeelool optical has helped 1,000,000 families to see clearly,
                 and claim their fashion statement at the same time.</p>
