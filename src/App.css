@@ -42,3 +42,10 @@ button {
     #b38a8e 100%
   );
 }
+
+p:hover,li:hover{
+  background: black;
+  background-clip: text; /* Clip the text with the gradient background */
+  -webkit-background-clip: text; /* For Safari compatibility */
+  color: transparent; 
+}
