@@ -1,0 +1,116 @@
+/* CartWheel.css */
+.cart-wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin-top: 10px;
+}
+
+.cart-wheel {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #ffd72b;
+  overflow: hidden;
+  position: relative;
+  transition: transform 5s ease-in-out;
+}
+
+.spinning {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cart-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-item span {
+  transform: rotate(-45deg);
+}
+
+.cart-item-1 {
+  background-color: #e74c3c;
+}
+
+.cart-item-2 {
+  background-color: #2ecc71;
+}
+
+.cart-item-3 {
+  background-color: #f1c40f;
+}
+
+.cart-item-4 {
+  background-color: #3498db;
+}
+
+.cart-item-5 {
+  background-color: #9b59b6;
+}
+
+.cart-item-6 {
+  background-color: #1abc9c;
+}
+
+.cart-item-7 {
+  background-color: #e67e22;
+}
+
+.cart-item-8 {
+  background-color: #95a5a6;
+}
+
+.spin-button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.spin-button span {
+  margin-left: 8px;
+}
+
+.result {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result span {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 18px;
+}
